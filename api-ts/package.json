@@ -1,0 +1,35 @@
+{
+  "name": "teste-aec",
+  "description": "Teste para a vaga de dev backend da AeC",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "author": "Gabriel Marques",
+  "scripts": {
+    "start": "ts-node src/server.ts",
+    "typeorm": "typeorm-ts-node-commonjs",
+    "typeorm:migrate": "npx typeorm-ts-node-commonjs migration:run -- -d path-to-datasource-config"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "fast-csv": "^5.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.5",
+    "reflect-metadata": "^0.2.2"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^20.12.12",
+    "ts-node": "^10.9.2",
+    "typeorm": "^0.3.20",
+    "typescript": "^5.4.5"
+  }
+}
